@@ -12,7 +12,7 @@ require('dotenv').config()
 ConnectDB()
 app.use(express.json())
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://mookmovies.netlify.app",
     credentials: true
 }))
 app.use('/api/user',userRouter)
